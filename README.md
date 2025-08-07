@@ -21,21 +21,24 @@ Este repositorio incluye la implementación completa de la simulación de un det
   - Implementación de la eficiencia cuántica del fotocátodo en función de la longitud de onda (250–700 nm) fileciteturn0file0
 - **5.3 Construcción de las propiedades del Tyvek**
   - Material HDPE para el revestimiento interno del tanque.
-  - Tabla de absorción y reflectividad difusa para maximizar la captura de luz Cherenkov (longitud de absorción = 10 m). Arreglos `water1PhotonEnergy` y `linerAbsLen` fileciteturn0file0
-- **5.4 Construcción del detector**
-  - Dimensiones del tanque: radio=105 cm, altura=90 cm, grosor pared=12 mm.
-  - Creación de sólidos (`G4Tubs`) para el volumen de agua, tapa superior, tapa inferior y pared interna.
-  - Asociación de materiales y posicionamiento dentro del mundo: `G4LogicalVolume` y `G4PVPlacement` para cada componente (tanque, tapas, PMT). Registro de detectores sensibles (`G4MPMTAction`, `G4MDetectorAction`) fileciteturn0file0
+  - Tabla de absorción y reflectividad difusa para maximizar la captura de luz Cherenkov (longitud de absorción = 10 m). Arreglos `water1PhotonEnergy` y `linerAbsLen`.
   - 
 <img width="408" height="368" alt="Cilindro" src="https://github.com/user-attachments/assets/7784360a-6e89-4686-a30a-b95fd197abfd" />
+- **5.4 Construcción del detector**
+- 
+  - Dimensiones del tanque: radio=105 cm, altura=90 cm, grosor pared=12 mm.
+  - Creación de sólidos (`G4Tubs`) para el volumen de agua, tapa superior, tapa inferior y pared interna.
+  - Asociación de materiales y posicionamiento dentro del mundo: `G4LogicalVolume` y `G4PVPlacement` para cada componente (tanque, tapas, PMT). Registro de detectores sensibles (`G4MPMTAction`, `G4MDetectorAction`)
+    
+<img width="779" height="267" alt="cili_pmt" src="https://github.com/user-attachments/assets/c5ac0d44-583d-4868-9d68-4aa656bb9819" />
 
 ## Resultados de la Simulación
 - Inyección de un muón que atraviesa la tapa superior del tanque.
 - Generación de fotones Cherenkov (visualizados en verde) reflejados por Tyvek y captados por el PMT en la parte superior central. La simulación muestra la trayectoria del muón y la posterior detección de fotoelectrones fileciteturn0file0
 
-<img src="fig5_10_simulation.png" alt="Simulación del Detector Cherenkov" width="600" />
+<img width="637" height="303" alt="wcd_muon" src="https://github.com/user-attachments/assets/ea4885b2-808a-4d43-b351-4a6cb226cd84" />
 
-## Conclusiones y Perspectivas a Futuro
+## Conclusiones
 - Implementación exitosa de toda la cadena de simulación: generación de lluvias de partículas, definición geométrica y física del detector y simulación de la interacción de partículas con producción de radiación Cherenkov.
 - Ventaja de versatilidad para explorar configuraciones de detectores y optimización de eficiencia y sensibilidad.
 - Proyecto futuro: adaptar la simulación a detectores propuestos para SWGO y análisis detallado de datos simulados fileciteturn0file0
