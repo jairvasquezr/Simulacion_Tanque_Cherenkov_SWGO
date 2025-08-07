@@ -12,8 +12,8 @@ Este repositorio incluye la implementación completa de la simulación de un det
   - Descripción general de Geant4 y Meiga como herramientas de simulación fileciteturn0file0
 - **5.1 Construcción del volumen mundo**
   - Definición de un cubo de 5 m de lado que contiene toda la geometría del detector. Variables `fWorldSizeX`, `fWorldSizeY`, `fWorldSizeZ`, y uso de `G4Box`, `G4LogicalVolume` y `G4PVPlacement` para crear el espacio de simulación.
-    
-    <img width="383" height="363" alt="mundo" src="https://github.com/user-attachments/assets/e0114669-8418-41e1-8242-be59f1d8df82" />
+  
+<img width="383" height="363" alt="mundo" src="https://github.com/user-attachments/assets/e0114669-8418-41e1-8242-be59f1d8df82" />
 
 - **5.2 Construcción de las propiedades del PMT**
   - Modelado del Hamamatsu R5912 como un elipsoide (semiejes X=10.1 cm, Y=10.1 cm, Z=6.5 cm).
